@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/fchw_react-router-dom_formik/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/fchw_react-router-dom_formik/static/js/main.a41683d1.chunk.js",
+    "main.js.map": "/fchw_react-router-dom_formik/static/js/main.a41683d1.chunk.js.map",
+    "runtime-main.js": "/fchw_react-router-dom_formik/static/js/runtime-main.6d084da4.js",
+    "runtime-main.js.map": "/fchw_react-router-dom_formik/static/js/runtime-main.6d084da4.js.map",
+    "static/js/2.512e7d4e.chunk.js": "/fchw_react-router-dom_formik/static/js/2.512e7d4e.chunk.js",
+    "static/js/2.512e7d4e.chunk.js.map": "/fchw_react-router-dom_formik/static/js/2.512e7d4e.chunk.js.map",
+    "static/js/3.5d5b242e.chunk.js": "/fchw_react-router-dom_formik/static/js/3.5d5b242e.chunk.js",
+    "static/js/3.5d5b242e.chunk.js.map": "/fchw_react-router-dom_formik/static/js/3.5d5b242e.chunk.js.map",
+    "index.html": "/fchw_react-router-dom_formik/index.html",
+    "static/css/main.ab7136cd.chunk.css.map": "/fchw_react-router-dom_formik/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/2.512e7d4e.chunk.js.LICENSE.txt": "/fchw_react-router-dom_formik/static/js/2.512e7d4e.chunk.js.LICENSE.txt",
+    "static/media/logo.103b5fa1.svg": "/fchw_react-router-dom_formik/static/media/logo.103b5fa1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6d084da4.js",
+    "static/js/2.512e7d4e.chunk.js",
+    "static/css/main.ab7136cd.chunk.css",
+    "static/js/main.a41683d1.chunk.js"
+  ]
+}
