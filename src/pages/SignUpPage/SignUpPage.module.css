@@ -1,0 +1,12 @@
+.component {
+  background-color: #3ea9f5;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+}
+

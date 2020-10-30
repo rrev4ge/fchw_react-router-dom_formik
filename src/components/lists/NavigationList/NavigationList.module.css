@@ -1,0 +1,38 @@
+.component {
+    margin: 25px 0;
+    padding: 0 5%;
+    background-color: #3EA9F5;
+    color: white;
+}
+
+.list {
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    text-align: left;
+    margin-top: 6px;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+}
+
+
+.link {
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    margin-top: 0;
+    position: relative;
+    border: 1px solid white;
+    background-color: #3EA9F5;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+}
