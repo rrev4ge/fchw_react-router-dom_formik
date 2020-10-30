@@ -30,7 +30,7 @@ class App extends Component {
           <Switch>
             <Route path={`${CONSTANTS.ROOT_PATH}/sign_in`} component={SignInPage} />
             <Route path={`${CONSTANTS.ROOT_PATH}/sign_up`} component={SignUpPage} />
-            <Route path={`${CONSTANTS.ROOT_PATH}/sign_in`} component={SignInPage} />
+            <Route path={`${CONSTANTS.ROOT_PATH}/`} component={SignInPage} />
           </Switch>
         </Suspense>
       </Router>

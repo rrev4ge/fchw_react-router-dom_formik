@@ -11,7 +11,7 @@ const NavigationList =(props)=> {
           <li>
             <img className={styles.logo} src='https://www.squadhelp.com/img/logo.png' alt='' />
           </li>
-          {props.location.pathname!==`${CONSTANTS.ROOT_PATH}/sign_in` ? <li className={styles.btn}><Link className={styles.link} to={`${CONSTANTS.ROOT_PATH}/sign_in`}>Signin</Link>
+          {props.location.pathname!==`${CONSTANTS.ROOT_PATH}/sign_in` && props.location.pathname!==`${CONSTANTS.ROOT_PATH}/` ? <li className={styles.btn}><Link className={styles.link} to={`${CONSTANTS.ROOT_PATH}/sign_in`}>Signin</Link>
           </li>:""}
           {props.location.pathname!==`${CONSTANTS.ROOT_PATH}/sign_up` ? <li className={styles.btn}><Link className={styles.link} to={`${CONSTANTS.ROOT_PATH}/sign_up`}>Signup</Link>
         </li>:""}
