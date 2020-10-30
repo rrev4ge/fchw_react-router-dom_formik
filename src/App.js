@@ -2,6 +2,7 @@ import './reset.css';
 import React, { Component, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NavigationList from './components/lists/NavigationList/index';
+import CONSTANTS from './CONSTANTS';
 
 const SignInPage = lazy(() => import('./pages/SignInPage'));
 const SignUpPage = lazy(() => import('./pages/SignUpPage'));
@@ -27,9 +28,9 @@ class App extends Component {
         <Route render={(props) => <NavigationList {...props} />} />
         <Suspense fallback={<div>Loading...</div>}>
           <Switch>
-            <Route path='/sign_in' component={SignInPage} />
-            <Route path='/sign_up' component={SignUpPage} />
-            <Route path='/' component={SignInPage} />
+            <Route path={`${CONSTANTS.ROOT_PATH}/sign_in`} component={SignInPage} />
+            <Route path={`${CONSTANTS.ROOT_PATH}/sign_up`} component={SignUpPage} />
+            <Route path={`${CONSTANTS.ROOT_PATH}/sign_in`} component={SignInPage} />
           </Switch>
         </Suspense>
       </Router>
