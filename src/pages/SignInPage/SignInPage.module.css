@@ -10,3 +10,8 @@
   .header {
     text-align: center;
   }
+  
+  .header>h1 {
+    font-size: xx-large;
+    margin: 5px 0;
+  }

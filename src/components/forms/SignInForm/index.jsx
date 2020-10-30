@@ -81,13 +81,13 @@ const SignInForm = (props) => {
             className={styles.facebook}
             name='submit_facebook'
             type='button'
-            value='f Sign in with Facebook'
+            value='Sign in with Facebook'
           />
           <Field
             className={styles.google}
             name='submit_google'
             type='button'
-            value='g Sign in with Google'
+            value='Sign in with Google'
           />
       </Form>
     </Formik>

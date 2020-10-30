@@ -10,3 +10,12 @@
   text-align: center;
 }
 
+.header>h1 {
+  font-size: xx-large;
+}
+
+.header>p {
+  font-size: large;
+  margin: 5px 0;
+}
+

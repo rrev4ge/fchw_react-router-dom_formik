@@ -77,6 +77,10 @@
   border: 1px solid white;
 }
 
+.label>span>h2 {
+  font-size: large;
+}
+
 .radio {
   margin: 0 5px;
 }
@@ -89,6 +93,7 @@
   outline: none;
   padding: 20px 30px;
   text-align: center;
+  font-size: x-large;
   border: 0;
 }
 
@@ -101,6 +106,7 @@
   outline: none;
   padding: 10px 20px;
   text-align: center;
+  font-size: x-large;
   border: 0;
 }
 
@@ -118,6 +124,7 @@
   outline: none;
   padding: 10px 30px;
   text-align: center;
+  font-size: x-large;
   border: 0;
 }
 
