@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import styles from './NavigationList.module.css';
 import CONSTANTS from '../../../CONSTANTS';
 const NavigationList = (props) => {
+  const {
+    location: { pathname },
+  } = props;
+
   return (
     <div className={styles.component}>
       <ul className={styles.list}>
@@ -13,11 +17,11 @@ const NavigationList = (props) => {
             alt=''
           />
         </li>
-        {(props.location.pathname !==`${CONSTANTS.ROOT_PATH}/` &&
-          props.location.pathname !==`${CONSTANTS.ROOT_PATH}` &&
-          props.location.pathname !==`/` &&
-          props.location.pathname !==`` &&
-          props.location.pathname !==`${CONSTANTS.ROOT_PATH}/sign_in`) ? (
+        {pathname !== `${CONSTANTS.ROOT_PATH}` &&
+        pathname !== `${CONSTANTS.ROOT_PATH}/` &&
+        pathname !== `/` &&
+        pathname !== `` &&
+        pathname !== `${CONSTANTS.ROOT_PATH}/sign_in` ? (
           <li className={styles.btn}>
             <Link className={styles.link} to={`${CONSTANTS.ROOT_PATH}/sign_in`}>
               Signin
@@ -26,7 +30,7 @@ const NavigationList = (props) => {
         ) : (
           ''
         )}
-        {props.location.pathname !== `${CONSTANTS.ROOT_PATH}/sign_up` ? (
+        {pathname !== `${CONSTANTS.ROOT_PATH}/sign_up` ? (
           <li className={styles.btn}>
             <Link className={styles.link} to={`${CONSTANTS.ROOT_PATH}/sign_up`}>
               Signup
