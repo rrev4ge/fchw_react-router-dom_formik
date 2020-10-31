@@ -1,8 +1,10 @@
 import './reset.css';
+import styles from './App.module.css';
 import React, { Component, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NavigationList from './components/lists/NavigationList/index';
 import CONSTANTS from './CONSTANTS';
+import { CircularProgress } from '@material-ui/core';
 
 const SignInPage = lazy(() => import('./pages/SignInPage'));
 const SignUpPage = lazy(() => import('./pages/SignUpPage'));
@@ -25,9 +27,14 @@ class App extends Component {
     return (
       <Router>
         <Route render={(props) => <NavigationList {...props} />} />
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense
+          fallback={
+            <div className={styles.loader}>
+              <CircularProgress color='secondary' />
+            </div>
+          }
+        >
           <Switch>
-            {/* <Route path={`${CONSTANTS.ROOT_PATH}/sign_in`} component={SignInPage} /> */}
             <Route
               path={`${CONSTANTS.ROOT_PATH}/sign_up`}
               component={SignUpPage}
@@ -37,8 +44,8 @@ class App extends Component {
                 `${CONSTANTS.ROOT_PATH}/`,
                 `${CONSTANTS.ROOT_PATH}`,
                 `/`,
-                `${CONSTANTS.ROOT_PATH}/sign_in`]
-              }
+                `${CONSTANTS.ROOT_PATH}/sign_in`,
+              ]}
               component={SignInPage}
             />
           </Switch>
